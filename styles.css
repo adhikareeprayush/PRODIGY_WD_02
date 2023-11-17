@@ -1,0 +1,190 @@
+/*
+  Project Information:
+  - Project Owner: Prayush Adhikari
+  - Project Submission: This project has been submitted to Prodigy Info Tech.
+  - Role: Web Development Intern
+
+  Copyright © 2023 Prayush Adhikari. All Rights Reserved.
+  Unauthorized copying or reproduction of this file, in part or whole,
+  without express permission from the copyright owner is prohibited.
+*/
+
+/* Importing Fonts */
+@import url('https://fonts.cdnfonts.com/css/aclonica');
+@import url('https://fonts.cdnfonts.com/css/sting');
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+    font-family: 'Aclonica', sans-serif;
+    background-color: aliceblue;
+}
+
+#body {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('light.jpg');
+}
+
+/* Themes Section */
+#theme {
+    position: absolute;
+    top: 0;
+    right: 0;
+    user-select: none;
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+#theme i {
+    cursor: pointer;
+}
+
+/* Top Clock Section */
+#top-clock {
+    position: absolute;
+    top: 0;
+    left: -40px;
+    user-select: none;
+    height: 55px;
+    width: 200px;
+    padding: 5px;
+    font-family: 'STING', sans-serif;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.datentime {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#date {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    font-size: 12px; /* Changed from 8px to 12px */
+}
+
+#real-time-clock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Stop Watch Section */
+#stopwatch {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'STING', sans-serif;
+    height: 300px;
+    width: 500px;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#stop-watch-time {
+    display: inline-block;
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.menus {
+    display: flex;
+    gap: 30px;
+}
+
+/* Credit Section */
+#credit {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    user-select: none;
+}
+
+#credit a {
+    text-decoration: none;
+    color: rgb(100, 197, 165);
+}
+
+#credit a:hover {
+    color: rgb(100, 197, 165);
+    text-decoration: underline;
+}
+
+/* Buttons */
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    width: 50px;
+    font-size: 25px;
+    background-color: #776B5D;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #776B5D;
+    color: white;
+    box-shadow: 0px 0px 10px #776B5D;
+}
+
+#lapse-time {
+    margin-top: 20px;
+    text-align: center;
+    height: 200px;
+    overflow-x: hidden;
+}
+
+.lapse-time-list {
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    gap: 200px;
+    align-items: center;
+    justify-content: between;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+.lapse {
+    letter-spacing: 3px;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+    #credit {
+        font-size: 12px;
+        text-align: center;
+        bottom: 10px;
+        right: 0;
+        width: 100%;
+    }
+}
